@@ -30,8 +30,26 @@
   transform: translate(-50%, -50%);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
 
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 12px;
+  }
+
+  &__label-name {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    color: $second-color-text;
+  }
+}
 .close-btn {
   position: absolute;
   top: 8px;
@@ -85,24 +103,6 @@
     fill: $Selection-color;
   }
 }
-.modal__title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 12px;
-}
-
-.modal__label-name {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
-  color: $second-color-text;
-}
 
 .modal__text-textarea {
   resize: none;
@@ -127,9 +127,6 @@
   }
 }
 /* ########## checkbox ########## */
-.modal__checkbox_hide {
-  visibility: hidden;
-}
 
 .modal__check_box {
   position: relative;
@@ -146,22 +143,29 @@
     border-radius: 2px;
   }
 }
-.modal__checkbox_hide:checked + .modal__check_box:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 3px;
-  width: 16px;
-  height: 15px;
-  background-color: $Selection-color;
-  background-image: url(../images/checkicon.svg);
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  border-radius: 2px;
+
+.modal__checkbox_hide {
+  visibility: hidden;
+
+  &:checked + .modal__check_box:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 16px;
+    height: 15px;
+    background-color: $Selection-color;
+    background-image: url(../images/checkicon.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    border-radius: 2px;
+  }
 }
+
 .modal__form_rules {
   display: flex;
 }
+
 .modal__rules_form {
   margin-left: 25px;
   margin-right: 14px;

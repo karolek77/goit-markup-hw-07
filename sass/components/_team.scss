@@ -2,23 +2,25 @@
 
 .team {
   background-color: $background-color-button;
-}
-.team__img-list {
-  display: flex;
-  list-style: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  justify-content: space-between;
-  margin: 0;
-}
-.team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-top: 0;
-  margin-bottom: 50px;
+
+  &__img-list {
+    display: flex;
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
 }
 .team__surname {
   font-weight: 500;

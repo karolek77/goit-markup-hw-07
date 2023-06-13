@@ -5,18 +5,19 @@
   align-items: center;
   border-bottom: 1px solid #ececec;
   padding: 24px 27px 24px 15px;
-}
-/* webstudio logo */
-.link__logo-text {
-  font-family: "Raleway";
-  color: #000000;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  width: 145px;
 
-  .link__accent {
+  /* webstudio logo */
+  &__logo-text {
+    font-family: "Raleway";
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    width: 145px;
+  }
+
+  &__accent {
     color: $Selection-color;
   }
 }
@@ -35,6 +36,7 @@
     margin-left: 46px;
   }
 }
+
 .nav__go-link {
   font-weight: 500;
   line-height: 1.14;
@@ -48,29 +50,50 @@
     color: $Selection-color;
   }
 }
+/* activ link */
+
+.nav__go-link {
+  &--active {
+    position: relative;
+    color: $Selection-color;
+  }
+
+  &--active::after {
+    position: absolute;
+    display: block;
+    content: "";
+    border-radius: 2px;
+    background: $Selection-color;
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+  }
+}
 /* contact link */
 .contact-links {
   display: flex;
   align-items: center;
 
-  &__contact-link:last-child {
-    margin-left: 30px;
+  &__contact-icon {
+    margin-right: 10px;
+    fill: #757575;
+    transition: fill 250ms $cubic-bezier;
   }
-  &__contact-link:first-child {
-    margin-left: 276px;
+
+  &__contact-link {
+    color: $second-color-text;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 250ms $cubic-bezier;
   }
 }
+
 .contact-links__contact-link {
-  color: $second-color-text;
-
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: color 250ms $cubic-bezier;
-
   &:hover,
   &:focus {
     color: $Selection-color;
@@ -80,25 +103,12 @@
     fill: $Selection-color;
   }
 }
-.contact-links__contact-icon {
-  margin-right: 10px;
-  fill: #757575;
-  transition: fill 250ms $cubic-bezier;
-}
-/* pages current*/
-.current {
-  position: relative;
-  color: $Selection-color;
 
-  &::after {
-    position: absolute;
-    display: block;
-    content: "";
-    border-radius: 2px;
-    background: $Selection-color;
-
-    width: 100%;
-    height: 4px;
-    bottom: 0;
+.contact-links {
+  &__contact-link:last-child {
+    margin-left: 30px;
+  }
+  &__contact-link:first-child {
+    margin-left: 276px;
   }
 }

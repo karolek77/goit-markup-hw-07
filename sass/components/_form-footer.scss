@@ -1,7 +1,31 @@
 @import "../utils/vars";
+
 .form {
   margin-left: 78px;
+
+  &__foot-text {
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-button;
+    margin-bottom: 20px;
+  }
+
+  &__email-footer {
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: $text-color-form;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+    background-color: var(--background-color);
+  }
 }
+
 .form__footer {
   display: flex;
 }
@@ -29,25 +53,4 @@
     background-color: $Selection-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
-}
-
-.form__foot-text {
-  font-weight: 700;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $text-button;
-  margin-bottom: 20px;
-}
-.form__email-footer {
-  font-size: 16px;
-  letter-spacing: 0.03em;
-  color: $text-color-form;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  width: 358px;
-  height: 50px;
-  padding: 15px 16px;
-  margin-right: 12px;
-  background-color: var(--background-color);
 }
