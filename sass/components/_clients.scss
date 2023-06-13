@@ -1,18 +1,21 @@
 @import "../utils/vars";
-.clients__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin: 0 auto;
-}
-.clients__list {
-  display: flex;
-  list-style: none;
-  margin: 50px 0 0 0;
-  padding: 0 15px;
-  justify-content: space-between;
+.clients {
+  &__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    margin: 50px 0 0 0;
+    padding: 0 15px;
+    justify-content: space-between;
+  }
 }
 .clients__icon-box {
   width: 170px;

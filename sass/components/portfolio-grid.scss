@@ -18,23 +18,29 @@
   }
 }
 
-.card-set__bottom-card {
-  border: 1px solid $border-card;
-  border-top: none;
-  padding: 20px 24px;
+.card-set {
+  &__bottom-card {
+    border: 1px solid $border-card;
+    border-top: none;
+    padding: 20px 24px;
+  }
+
+  &__name-project {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin: 0;
+  }
 }
-.card-set__name-project {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  margin: 0;
-}
-.card-set__type-of-project {
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
-  color: $second-color-text;
-  margin-top: 4px;
-  margin-bottom: 0;
+
+.card-set {
+  &__type-of-project {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $second-color-text;
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
 }
